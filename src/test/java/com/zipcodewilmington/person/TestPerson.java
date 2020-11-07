@@ -95,4 +95,59 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testSetHairColor(){
+        Person person = new Person();
+        String expected = "black";
+
+        person.setHairColor(expected);
+
+        String actual = person.getHairColor();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetEyeColor(){
+        Person person = new Person();
+        String expected = "brown";
+
+        person.setEyeColor(expected);
+
+        String actual = person.getEyeColor();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetHeight(){
+        Person person = new Person();
+        Double expected = 70.5;
+
+        person.setHeight(expected);
+
+        Double actual = person.getHeight();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetFacialHair(){
+        Person person = new Person();
+        Boolean expected = true;
+
+        person.setFacialHair(expected);
+
+        Boolean actual = person.getFacialHair();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetVegetarian(){
+        Person person = new Person();
+        Boolean expected = true;
+
+        person.setVegetarian(expected);
+
+        Boolean actual = person.getVegetarian();
+        Assert.assertEquals(expected, actual);
+    }
 }
